@@ -1,28 +1,8 @@
-class Person
+require_relative 'lib/player'
+require_relative 'lib/question'
 
-  attr_accessor :hp, :id
-  
-  def initialize(id)
-    @id = (id)
-    @hp = 3
-  end
-
-end
-
-class Question
-
-  attr_accessor :num1, :num2, :answer
-  
-  def initialize
-    @num1 = rand(20)
-    @num2 = rand(20)
-    @answer = num1 + num2
-  end
-  
-end
-
-player1 = Person.new(1)
-player2 = Person.new(2)
+player1 = Player.new(1)
+player2 = Player.new(2)
 
 current_player = player1
 

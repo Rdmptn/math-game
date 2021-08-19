@@ -35,10 +35,7 @@ while player1.hp > 0 && player2.hp > 0
   else 
     puts " ----- NEW TURN ----- "
   end
+
+  current_player == player1 ? current_player = player2 : current_player = player1
   
-  if current_player ==  player1
-    current_player =  player2
-  else 
-    current_player =  player1
-  end
 end

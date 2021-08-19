@@ -1,6 +1,7 @@
 class Player
 
-  attr_accessor :hp, :id
+  attr_accessor :hp
+  attr_reader :id
   
   def initialize(id)
     @id = (id)
